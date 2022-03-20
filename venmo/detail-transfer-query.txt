@@ -1,0 +1,17 @@
+SELECT transfer_id, transfer_status_id, transfer_type_id, amount, username AS user_from,
+	
+	(SELECT username FROM tenmo_user 
+	 JOIN account ON tenmo_user.user_id = account.user_id
+	 WHERE account_id = account_to ) AS user_to 
+	 
+FROM tenmo_user
+JOIN account ON tenmo_user.user_id = account.user_id
+JOIN transfer ON account_id = account_from
+WHERE transfer_id = 3006;
+
+--Select ALL 
+SELECT *
+FROM tenmo_user
+JOIN account ON tenmo_user.user_id = account.user_id
+JOIN transfer ON account_id = account_from
+WHERE transfer_id = 3006;
