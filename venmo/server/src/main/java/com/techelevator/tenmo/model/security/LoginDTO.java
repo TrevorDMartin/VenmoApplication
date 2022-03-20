@@ -1,4 +1,4 @@
-package com.techelevator.tenmo.model;
+package com.techelevator.tenmo.model.security;
 
 /**
  * DTO for storing a user's credentials.

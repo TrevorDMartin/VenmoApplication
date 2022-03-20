@@ -1,15 +1,11 @@
 package com.techelevator.tenmo;
 
-import com.fasterxml.jackson.databind.introspect.TypeResolutionContext;
 import com.techelevator.tenmo.model.*;
+import com.techelevator.tenmo.model.security.AuthenticatedUser;
+import com.techelevator.tenmo.model.security.User;
+import com.techelevator.tenmo.model.security.UserCredentials;
 import com.techelevator.tenmo.services.*;
-import com.techelevator.util.BasicLogger;
-import org.springframework.web.client.ResourceAccessException;
-import org.springframework.web.client.RestClientException;
-import org.springframework.web.server.ResponseStatusException;
-
-import java.math.BigDecimal;
-import java.sql.SQLOutput;
+import com.techelevator.tenmo.services.security.AuthenticationService;
 
 public class App {
 

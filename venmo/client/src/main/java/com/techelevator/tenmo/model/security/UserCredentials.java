@@ -1,15 +1,16 @@
-package com.techelevator.tenmo.model;
+package com.techelevator.tenmo.model.security;
 
-import javax.validation.constraints.NotEmpty;
+public class UserCredentials {
 
-public class RegisterUserDTO {
-
-    @NotEmpty
     private String username;
-    @NotEmpty
     private String password;
 
-    public String getUsername() {
+    public UserCredentials(String username, String password) {
+		this.username = username;
+		this.password = password;
+	}
+
+	public String getUsername() {
         return username;
     }
 
@@ -25,3 +26,4 @@ public class RegisterUserDTO {
         this.password = password;
     }
 }
+
