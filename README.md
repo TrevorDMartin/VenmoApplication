@@ -1,7 +1,7 @@
 # VenmoApplication
 ## A Money Transfer API  
 
-This was a pair programming project. 
+This was an end of module, pair programming, mini-capstone.  
 We were given the task of completing this Venmo style API called Tenmo.  
 In the subdirectory you can view the User Cases.  
 
@@ -13,12 +13,8 @@ The server follows MVC design patterns, implements a RESTful API using Spring Bo
 
 We built three controllers, three DAO interfaces, and three JdbcDao classes respectively. One each for Account, User, and Transfer.  
 
-If you want to look at our work, whether in the server or client package the path is src/main/java/com/techelevator/tenmo  
+[Client Files](venmo/client/src/main/java/com/techelevator/tenmo/)      
+  
+[Server Files](venmo/server/src/main/java/com/techelevator/tenmo/)  
 
 Hope you enjoy.
-  
-
-
-
-
-
